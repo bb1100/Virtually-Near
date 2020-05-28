@@ -1,2 +1,2 @@
 # Virtually-Near
-cfg website
+CFG WEBSITE
