@@ -14,12 +14,20 @@ h1 {
 
 /* interactive visual element will go in here with Get Virtually Near title and buttons to other pages*/
 .homepage-interactive-block {
-    padding: 10rem;
+    padding: 10rem0;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     background-color: #DAFFEC;
     text-align: center;
+    position: relative;
+}
+.homepage-interactive-block iframe {
+    width: 100%;
+    height: 800px;
+}
+container { 
+    position: absolute;
 }
 
 h2 {
