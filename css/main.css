@@ -1,0 +1,69 @@
+/* header */
+header {
+    height: 200px;
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    background: -webkit-linear-gradient(#CFFF75, #A9A6FF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+/* interactive visual element will go in here with Get Virtually Near title and buttons to other pages*/
+.homepage-interactive-block {
+    padding: 10rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #DAFFEC;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    padding: 50px;
+}
+
+/* buttons */
+.btn {
+    margin: 1rem;
+    padding: 10px 15px;
+}
+
+/* emojis over buttons */
+
+/* intro info text about site section */
+.intro-text {
+    padding: 5rem 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* contact us section */
+.contact-us-block {
+    padding: 5rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #DAFFEC;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding: 1rem 7px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    font-size: small;
+    padding: 1rem;
+}
