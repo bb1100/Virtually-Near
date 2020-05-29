@@ -14,29 +14,29 @@ h1 {
 
 /* interactive visual element will go in here with Get Virtually Near title and buttons to other pages*/
 .homepage-interactive-block {
-    padding: 10rem0;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #DAFFEC;
-    text-align: center;
-    position: relative;
+    height: 700px;
 }
+
 .homepage-interactive-block iframe {
     width: 100%;
-    height: 800px;
-}
-container { 
+    height: 700px;
     position: absolute;
 }
 
-h2 {
+.homepage-interactive-block container {
+    position: relative;
+    text-align: center;
+    align-items: center;
+} 
+
+.homepage-interactive-block h2 {
     font-size: 2.5rem;
     padding: 50px;
+    color: white;
 }
 
 /* buttons */
-.btn {
+.homepage-interactive-block .btn {
     margin: 1rem;
     padding: 10px 15px;
 }
