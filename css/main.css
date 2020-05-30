@@ -1,6 +1,6 @@
 /* header */
 header {
-    height: 200px;
+  height: fit-content;
 }
 
 h1 {
@@ -11,6 +11,22 @@ h1 {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
+
+
+/* icons are overlapping, cant separate them or identify each one individually to change right position 
+tried ul and li and flex box */
+ion-icon {
+    color: #A9A6FF;
+    position: absolute;
+    /* justify-content: flex-end; */
+    top: 8px;
+    right: 16px;
+  }
+
+  ion-icon:hover{
+  color: #CFFF75;
+  }
+
 
 /* interactive visual element will go in here with Get Virtually Near title and buttons to other pages*/
 .homepage-interactive-block {
@@ -23,6 +39,7 @@ h1 {
     position: absolute;
 }
 
+/* wont vertically align to centre */
 .homepage-interactive-block container {
     position: relative;
     text-align: center;
@@ -44,17 +61,71 @@ h1 {
 /* emojis over buttons */
 
 /* intro info text about site section */
-.intro-text {
+.txt {
+    display: block;
     padding: 5rem 4rem;
     font-weight: bold;
     text-align: center;
 }
 
+/*
+ * Animation module with all animation code doesn't work 
+ looks like js file isnt linking
+ https://codepen.io/hendrysadrak/pen/VLMOMJ
+ */ 
+ .anim-text-flow,
+ .anim-text-flow-hover:hover {
+   /*
+    * Animation variables
+    */
+   $animationSteps: 20;
+   $animationDuration: 50;
+   $animationElement: span;
+   $animationElementsCount: 100;
+   $delayBetweenLetters: 0.2;
+ 
+   /*
+    * Elements settings
+    */
+   #{$animationElement} {
+     animation-name: anim-text-flow-keys;
+     animation-duration: #{$animationDuration}s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+     animation-fill-mode: forwards;
+   }
+ 
+   /*
+    * Keyframe loop
+    */
+   @keyframes anim-text-flow-keys {
+     @for $i from 0 through $animationSteps {
+       #{percentage($i * (1 / $animationSteps))} {
+         color: hsla(random(365), 60, 60, 1);
+       }
+     }
+   }
+ 
+   /*
+    * Element animation delay loop
+    */
+   $totalDelayTime: $animationElementsCount * $delayBetweenLetters;
+ 
+   @for $i from 1 through $animationElementsCount {
+     #{$animationElement}:nth-of-type(#{$i}) {
+       animation-delay: #{($i * $delayBetweenLetters) - $totalDelayTime}s;
+     }
+   }
+ }
+ /* end of animation  */
+
+
+
 /* contact us section */
 .contact-us-block {
     padding: 5rem;
     flex-wrap: nowrap;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     background-color: #DAFFEC;
     text-align: center;
@@ -68,6 +139,24 @@ li {
     display: inline-block;
     padding: 1rem 7px;
 }
+
+/* socials -- really distorted background circle eww */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 50%;
+    background: white;
+    color: #DAFFEC;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
 
 /* footer */
 footer {
