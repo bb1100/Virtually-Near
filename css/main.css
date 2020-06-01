@@ -31,13 +31,14 @@ ion-icon {
 
 /* interactive visual element will go in here with Get Virtually Near title and buttons to other pages*/
 .homepage-interactive-block {
-    height: 65vh;
+    /* height: 65vh; */
+    height: 600px;
     position: relative;
 }
 
 .homepage-interactive-block embed {
     width: 100%;
-    height: 65vh;
+    height: 600px;
     position: absolute;
 }
 
@@ -45,6 +46,7 @@ ion-icon {
 .homepage-interactive-block container {
     position: relative;
     text-align: center;
+    top: 150px;
     
     /* position: absolute;
     width: 100%;
