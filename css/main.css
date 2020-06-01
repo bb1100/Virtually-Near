@@ -1,5 +1,5 @@
 /* header */
-header {
+.header {
   height: fit-content;
 }
 
@@ -18,7 +18,8 @@ tried ul and li and flex box */
 ion-icon {
     color: #A9A6FF;
     position: absolute;
-    /* justify-content: flex-end; */
+    /* display: flex;
+    justify-content: flex-end; */
     top: 8px;
     right: 16px;
   }
@@ -30,12 +31,13 @@ ion-icon {
 
 /* interactive visual element will go in here with Get Virtually Near title and buttons to other pages*/
 .homepage-interactive-block {
-    height: 700px;
+    height: 65vh;
+    position: relative;
 }
 
-.homepage-interactive-block iframe {
+.homepage-interactive-block embed {
     width: 100%;
-    height: 700px;
+    height: 65vh;
     position: absolute;
 }
 
@@ -43,17 +45,24 @@ ion-icon {
 .homepage-interactive-block container {
     position: relative;
     text-align: center;
-    align-items: center;
+    
+    /* position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; */
 } 
 
-.homepage-interactive-block h2 {
+
+.homepage-interactive-block container h2 {
     font-size: 2.5rem;
     padding: 50px;
     color: white;
 }
 
 /* buttons */
-.homepage-interactive-block .btn {
+.homepage-interactive-block container .page-buttons .btn {
     margin: 1rem;
     padding: 10px 15px;
 }
