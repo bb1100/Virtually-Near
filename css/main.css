@@ -1,6 +1,7 @@
 /* header */
 .header {
   height: fit-content;
+  position: relative;
 }
 
 h1 {
@@ -10,6 +11,7 @@ h1 {
     background: -webkit-linear-gradient(#CFFF75, #A9A6FF);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 
@@ -17,11 +19,17 @@ h1 {
 tried ul and li and flex box */
 ion-icon {
     color: #A9A6FF;
-    position: absolute;
+    /* position: relative; */
+      /* top: -5vh; */
+    /* left: 95vw;  */
+
+    display: inline-block;
     /* display: flex;
     justify-content: flex-end; */
-    top: 8px;
-    right: 16px;
+
+    float: right;
+    padding: 2px;
+    margin: 15px 8px 15px 5px;
   }
 
   ion-icon:hover{
@@ -42,7 +50,7 @@ ion-icon {
     position: absolute;
 }
 
-/* wont vertically align to centre */
+
 .homepage-interactive-block container {
     position: relative;
     text-align: center;
@@ -141,37 +149,51 @@ ion-icon {
     align-items: center;
     background-color: #DAFFEC;
     text-align: center;
+    color: #A9A6FF;
+    background-image: linear-gradient(#DAFFEC, #A9A6FF);
+}
+
+.contact-us-block ul a {
+  color: #A9A6FF;
 }
 
 ul {
     list-style: none;
+    
 }
 
 li {
     display: inline-block;
-    padding: 1rem 7px;
+    padding: 20px; /*changes top and bottom padding */
 }
 
 /* socials -- really distorted background circle eww */
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
+    /* padding: 30px; was conflicting with li padding  */
+    font-size: 60px;
+    width: 60px;
+    height: 60px;
     text-align: center;
     text-decoration: none;
-    margin: 5px;
+    margin: 0 20px;
     border-radius: 50%;
-    background: white;
+    background: #A9A6FF;
     color: #DAFFEC;
+    vertical-align: center;
   }
+
 
   .fa:hover {
       opacity: 0.7;
+      text-decoration: none;
+      color: #DAFFEC;
+      box-shadow: 0px 0px 0px 8px rgba(255,255,255,0.8);
   }
 
 
 /* footer */
 footer {
+    color: #A9A6FF;
     text-align: center;
     font-size: small;
     padding: 1rem;
